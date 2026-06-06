@@ -26,7 +26,7 @@ jobs:
       - name: Build APK
         run: flutter build apk --debug --no-tree-shake-icons
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: VOLTIX-APK
           path: build/app/outputs/flutter-apk/app-debug.apk
